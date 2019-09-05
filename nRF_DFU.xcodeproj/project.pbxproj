@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		0420704A231E8F16000F5CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04207049231E8F16000F5CBE /* Assets.xcassets */; };
 		0420704D231E8F16000F5CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0420704B231E8F16000F5CBE /* LaunchScreen.storyboard */; };
 		04207050231E8F16000F5CBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0420704F231E8F16000F5CBE /* main.m */; };
+		042070D2231F6DE6000F5CBE /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042070D1231F6DE6000F5CBE /* iOSDFULibrary.framework */; };
+		049A55792321437E00A2FEEC /* nrf52832_sdk_12.2_app.zip in Resources */ = {isa = PBXBuildFile; fileRef = 049A55782321437E00A2FEEC /* nrf52832_sdk_12.2_app.zip */; };
+		253A136392383AE6AC317323 /* Pods_nRF_DFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D19CFEED814BCF57ECDE73 /* Pods_nRF_DFU.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		0420704C231E8F16000F5CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0420704E231E8F16000F5CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0420704F231E8F16000F5CBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04207058231F6907000F5CBE /* nRF_DFU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nRF_DFU-Bridging-Header.h"; sourceTree = "<group>"; };
+		042070D1231F6DE6000F5CBE /* iOSDFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSDFULibrary.framework; sourceTree = "<group>"; };
+		049A55782321437E00A2FEEC /* nrf52832_sdk_12.2_app.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = nrf52832_sdk_12.2_app.zip; sourceTree = "<group>"; };
+		58D19CFEED814BCF57ECDE73 /* Pods_nRF_DFU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nRF_DFU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EAD7B45E1AA51E364E1FE92 /* Pods-nRF_DFU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nRF_DFU.debug.xcconfig"; path = "Target Support Files/Pods-nRF_DFU/Pods-nRF_DFU.debug.xcconfig"; sourceTree = "<group>"; };
+		CB6F6CAC9E42F59192FB8A87 /* Pods-nRF_DFU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nRF_DFU.release.xcconfig"; path = "Target Support Files/Pods-nRF_DFU/Pods-nRF_DFU.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042070D2231F6DE6000F5CBE /* iOSDFULibrary.framework in Frameworks */,
+				253A136392383AE6AC317323 /* Pods_nRF_DFU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				0420703F231E8F15000F5CBE /* nRF_DFU */,
 				0420703E231E8F15000F5CBE /* Products */,
+				D96404C6239C43DDD4878C3E /* Frameworks */,
+				E44D2544AA534CDFDFD85E47 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +75,33 @@
 				04207041231E8F15000F5CBE /* AppDelegate.m */,
 				04207043231E8F15000F5CBE /* ViewController.h */,
 				04207044231E8F15000F5CBE /* ViewController.m */,
+				049A55782321437E00A2FEEC /* nrf52832_sdk_12.2_app.zip */,
 				04207046231E8F15000F5CBE /* Main.storyboard */,
 				04207049231E8F16000F5CBE /* Assets.xcassets */,
 				0420704B231E8F16000F5CBE /* LaunchScreen.storyboard */,
 				0420704E231E8F16000F5CBE /* Info.plist */,
 				0420704F231E8F16000F5CBE /* main.m */,
+				04207058231F6907000F5CBE /* nRF_DFU-Bridging-Header.h */,
 			);
 			path = nRF_DFU;
+			sourceTree = "<group>";
+		};
+		D96404C6239C43DDD4878C3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				042070D1231F6DE6000F5CBE /* iOSDFULibrary.framework */,
+				58D19CFEED814BCF57ECDE73 /* Pods_nRF_DFU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E44D2544AA534CDFDFD85E47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EAD7B45E1AA51E364E1FE92 /* Pods-nRF_DFU.debug.xcconfig */,
+				CB6F6CAC9E42F59192FB8A87 /* Pods-nRF_DFU.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04207053231E8F16000F5CBE /* Build configuration list for PBXNativeTarget "nRF_DFU" */;
 			buildPhases = (
+				DE15668C0D44D16492B75DCA /* [CP] Check Pods Manifest.lock */,
 				04207039231E8F15000F5CBE /* Sources */,
 				0420703A231E8F15000F5CBE /* Frameworks */,
 				0420703B231E8F15000F5CBE /* Resources */,
+				77612072540ADB095C6E433F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +137,7 @@
 				TargetAttributes = {
 					0420703C231E8F15000F5CBE = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -131,10 +167,53 @@
 				0420704D231E8F16000F5CBE /* LaunchScreen.storyboard in Resources */,
 				0420704A231E8F16000F5CBE /* Assets.xcassets in Resources */,
 				04207048231E8F15000F5CBE /* Main.storyboard in Resources */,
+				049A55792321437E00A2FEEC /* nrf52832_sdk_12.2_app.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77612072540ADB095C6E433F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nRF_DFU/Pods-nRF_DFU-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nRF_DFU/Pods-nRF_DFU-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nRF_DFU/Pods-nRF_DFU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE15668C0D44D16492B75DCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nRF_DFU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04207039231E8F15000F5CBE /* Sources */ = {
@@ -283,34 +362,55 @@
 		};
 		04207054231E8F16000F5CBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EAD7B45E1AA51E364E1FE92 /* Pods-nRF_DFU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U9D3D3Z64T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = nRF_DFU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.csc.nRF-DFU";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nRF_DFU/nRF_DFU-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		04207055231E8F16000F5CBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6F6CAC9E42F59192FB8A87 /* Pods-nRF_DFU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U9D3D3Z64T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = nRF_DFU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.csc.nRF-DFU";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nRF_DFU/nRF_DFU-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-nRF_DFU/Pods-nRF_DFU-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework
+${BUILT_PRODUCTS_DIR}/iOSDFULibrary/iOSDFULibrary.framework
